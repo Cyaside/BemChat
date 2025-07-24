@@ -25,13 +25,13 @@ import { MessageCircle } from 'lucide-vue-next'
                     <!-- Gambar dan Teks buat bagian kanan -->
                     <div class="bg-gradient-to-br from-red-50 to-blue-50 rounded-2xl p-6">
                         <div class="flex items-center justify-center space-x-4 mb-4">
+                            <!-- Mr Kim-->
+                            <img src="/anomali.jpg" alt="Anomali" class="w-20 h-20 object-cover rounded-2xl shadow" />
                             <!-- Ikon chat -->
                             <div class="w-20 h-20 bg-gradient-to-r from-red-400 to-blue-500
                        rounded-full flex items-center justify-center">
                                 <MessageCircle class="w-10 h-10 text-white" />
                             </div>
-                            <!-- Mr Kim-->
-                            <img src="/anomali.jpg" alt="Anomali" class="w-20 h-20 object-cover rounded-2xl shadow" />
                         </div>
                         <p class="text-gray-600 text-center">
                             jika ada pertanyaan atau butuh bantuan bisa langsung saja hubungi Mr. Kim

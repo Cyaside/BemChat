@@ -1,5 +1,6 @@
 <template>
     <div class="min-h-screen bg-gradient-to-br from-red-50 via-white to-blue-50">
+        <Navigations />
         <HeroSection />
         <FeaturesSection />
         <ContactSection />
@@ -7,6 +8,7 @@
 </template>
 
 <script setup>
+import Navigations from './components/Navigations.vue'
 import HeroSection from './components/Herosection.vue'
 import FeaturesSection from './components/FeaturesSection.vue'
 import ContactSection from './components/ContactSection.vue'
