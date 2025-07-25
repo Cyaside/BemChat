@@ -72,10 +72,6 @@
                             class="bg-gradient-to-r from-red-400 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-red-500 hover:to-blue-600 transition-all transform hover:scale-105 shadow-lg">
                             Mulai Ngobrol Sekarang
                         </button>
-                        <button
-                            class="border-2 border-red-400 text-red-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-red-50 transition-all">
-                            Pelajari Lebih Lanjut
-                        </button>
                     </div>
                 </div>
 

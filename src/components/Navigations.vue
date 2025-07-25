@@ -2,6 +2,8 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { MessageCircle, Menu } from 'lucide-vue-next'
 
+defineEmits(['login', 'register'])
+
 const mobileMenuOpen = ref(false)
 const isScrolled = ref(false)
 
@@ -12,6 +14,7 @@ function onScroll() {
 onMounted(() => {
   window.addEventListener('scroll', onScroll)
 })
+
 onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
 })
@@ -20,7 +23,7 @@ onUnmounted(() => {
 <template>
   <!--Blur-->
   <nav :class="[
-    'backdrop-blur-md shadow-lg sticky top-0 z-5 transition-colors duration-100',
+    'backdrop-blur-md shadow-lg sticky top-0 z-15 transition-colors duration-100',
     isScrolled ? 'bg-white/60' : 'bg-white/90'
   ]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,11 +47,11 @@ onUnmounted(() => {
 
           <!-- auth buttons -->
           <div class="flex space-x-4">
-            <button
+            <button @click="$emit('login')"
               class="bg-gradient-to-r from-red-400 to-blue-500 text-white px-6 py-2 rounded-full hover:from-red-500 hover:to-blue-600 transition-all transform hover:scale-105">
               Login
             </button>
-            <button
+            <button @click="$emit('register')"
               class="bg-white border border-red-500 text-red-500 px-6 py-2 rounded-full hover:bg-red-50 transition-colors">
               Register
             </button>
@@ -70,12 +73,12 @@ onUnmounted(() => {
           <a href="#features" class="text-gray-700 hover:text-red-500 transition-colors font-medium">Features</a>
           <a href="#contact" class="text-gray-700 hover:text-red-500 transition-colors font-medium">Contact</a>
 
-          <!--  auth -->
-          <button
+          <!-- auth -->
+          <button @click="$emit('login')"
             class="bg-gradient-to-r from-red-400 to-blue-500 text-white px-6 py-2 rounded-full hover:from-red-500 hover:to-blue-600 transition-all w-fit">
             Login
           </button>
-          <button
+          <button @click="$emit('register')"
             class="bg-white border border-red-500 text-red-500 px-6 py-2 rounded-full hover:bg-red-50 transition-colors w-fit">
             Register
           </button>
