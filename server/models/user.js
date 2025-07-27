@@ -62,8 +62,8 @@ export default class User {
 
   // Get database connection
   static async getDB() {
-    const client = await MongoClient.connect(
-      "mongodb+srv://Cyaside:SigmaSkibidi@cluster0.utrbxsg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    const client = await mongodb.MongoClient.connect(
+  process.env.MONGODB_URI,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

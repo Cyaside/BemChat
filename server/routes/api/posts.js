@@ -1,5 +1,6 @@
 import express from "express"
 import mongodb from "mongodb"
+require('dotenv').config();
 
 const router = express.Router()
 
@@ -44,8 +45,8 @@ router.post("/", async (req, res) => {
 
 // Utility: Load posts collection
 async function loadPostsCollection() {
-  const client = await mongodb.MongoClient.connect(
-    "mongodb+srv://Cyaside:SigmaSkibidi@cluster0.utrbxsg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+const client = await mongodb.MongoClient.connect(
+  process.env.MONGODB_URI,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
