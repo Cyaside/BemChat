@@ -33,5 +33,4 @@ app.use("/api/auth", auth)
 
 const port = process.env.PORT || 5000
 
-app.listen(port, () => {
-})
+app.listen(port, () => {})

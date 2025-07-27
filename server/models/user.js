@@ -62,13 +62,7 @@ export default class User {
 
   // Get database connection
   static async getDB() {
-    const client = await mongodb.MongoClient.connect(
-  process.env.MONGODB_URI,
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      },
-    )
+const client = await MongoClient.connect(process.env.MONGODB_URI)
     return client.db("cluster0")
   }
 
