@@ -29,7 +29,7 @@ const handleLogin = async () => {
         const data = await response.json()
 
         if (response.ok) {
-            // Store user data in localStorage
+            // Store Data user di localStorage
             localStorage.setItem('user', JSON.stringify(data.user))
             localStorage.setItem('token', data.token)
             emit('login-success', data.user)
