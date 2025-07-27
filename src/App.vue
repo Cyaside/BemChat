@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import Navigation from './components/Navigations.vue'
-import HeroSection from './components/Herosection.vue'
+import HeroSection from './components/HeroSection.vue'
 import FeaturesSection from './components/FeaturesSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import LoginPage from './views/LoginPage.vue'
