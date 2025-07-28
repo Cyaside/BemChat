@@ -5,6 +5,7 @@ import dotenv from "dotenv"
 
 // Import routes
 import auth from "./routes/api/auth.js"
+import messages from "./routes/api/messages.js"
 
 // Load environment variables
 dotenv.config()
@@ -30,6 +31,7 @@ app.use((req, res, next) => {
 // Routes
 
 app.use("/api/auth", auth)
+app.use("/api/messages", messages)
 
 const port = process.env.PORT || 5000
 

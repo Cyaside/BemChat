@@ -6,6 +6,7 @@ import FeaturesSection from './components/FeaturesSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import LoginPage from './views/LoginPage.vue'
 import RegisterPage from './views/RegisterPage.vue'
+import MessagesPage from './views/MessagesPage.vue'
 import { MessageCircle, User } from 'lucide-vue-next'
 
 const currentView = ref('landing')
