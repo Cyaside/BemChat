@@ -86,7 +86,7 @@ body {
         <!-- Landing Page -->
         <div v-if="currentView === 'landing'" class="min-h-screen bg-gradient-to-br from-red-300 via-white to-blue-300">
             <Navigation @login="showLogin" @register="showRegister" />
-            <HeroSection />
+            <HeroSection @go-to-login="showLogin" />
             <FeaturesSection />
             <ContactSection />
         </div>

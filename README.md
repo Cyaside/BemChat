@@ -115,4 +115,6 @@ http://localhost:5173
 
 ### Note
 
-a bit laggy during messages and loading there, wait a bit before the contacts and its messages load.
+The Deployed Websites is laggy during messages and loading there, wait a bit before the contacts shows up and then the messages also takes time to load and when changing contacs chat it also took time to load the messages.
+
+And Remember when run locally Change the MongoDB_URI in the .env with your MongoDB_URI that use cluster0 name if not then just chat me and ill give you the original

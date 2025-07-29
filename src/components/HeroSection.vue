@@ -68,7 +68,7 @@
                         diskusi jadi makin lancar dan seru. ✌️
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button
+                        <button @click="$emit('go-to-login')"
                             class="bg-gradient-to-r from-red-400 to-blue-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-red-500 hover:to-blue-600 transition-all transform hover:scale-105 shadow-lg">
                             Mulai Ngobrol Sekarang
                         </button>
