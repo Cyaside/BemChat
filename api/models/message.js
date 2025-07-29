@@ -174,7 +174,7 @@ export default class Message {
   // Get database connection
   static async getDB() {
     const client = await MongoClient.connect(process.env.MONGODB_URI)
-    return client.db("bemchat") // Changed from "cluster0" to "bemchat"
+    return client.db("cluster0") 
   }
 
   async getDB() {

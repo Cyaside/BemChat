@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
-import { MessageCircle, Eye, EyeOff } from 'lucide-vue-next'
+import { MessageCircle, Eye, EyeOff, ArrowLeft } from 'lucide-vue-next'
 
-const emit = defineEmits(['switch-to-login', 'register-success'])
+const emit = defineEmits(['switch-to-login', 'register-success', 'switch-to-landing'])
 
 const registerForm = ref({
     username: '',
@@ -83,6 +83,12 @@ const handleRegister = async () => {
             </div>
 
             <div class="bg-white rounded-3xl shadow-2xl p-8 relative z-10">
+                <!-- Back Button -->
+                <button @click="emit('switch-to-landing')"
+                    class="absolute top-4 left-4 text-gray-600 hover:text-red-500 p-2 rounded-full hover:bg-red-50 transition-all">
+                    <ArrowLeft class="w-5 h-5" />
+                </button>
+
                 <!-- Logo -->
                 <div class="text-center mb-8">
                     <div
