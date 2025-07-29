@@ -17,6 +17,15 @@
 
 Gradients like `from-red-400 to-blue-500` are frequently used for buttons, icons, and also chat bubbles or background
 
+## Tech Stack
+
+- Vue.js
+- Vite
+- Tailwind Css
+- Nodejs
+- MongoDB
+- ExpressJs
+
 ## Local Deployment
 
 Follow these steps to set up and run BEM Chatting on your local machine.
@@ -36,28 +45,25 @@ Before you begin, ensure you have the following installed:
 The backend is an Express.js application located in the `api` directory.
 
 1.  **Navigate to the API directory**:
-    \`\`\`bash
+
     cd api
-    \`\`\`
 
 2.  **Install dependencies**:
-    \`\`\`bash
+
     npm install
 
-    # or
+    or
 
     yarn install
-    \`\`\`
 
 3.  **Create a `.env` file**:
     In the `api` directory, create a file named `.env` and add the following environment variables. Replace the placeholder values with your actual MongoDB URI and a strong secret key.
 
-    \`\`\`env
-    MONGODB_URI="mongodb+srv://<username>:<password>@<cluster-url>/cluster0?retryWrites=true&w=majority"
-    JWT_SECRET="your_very_strong_and_random_jwt_secret_key"
-    PORT=5000
-    FRONTEND_URL="http://localhost:5173"
-    \`\`\`
+    **.env**  
+    MONGODB_URI="mongodb+srv: <username>:<password>@<cluster-url>/cluster0retryWrites=true w=majority"  
+    JWT_SECRET="your_very_strong_and_random_jwt_secret_key"  
+    PORT=5000  
+    FRONTEND_URL= http://localhost:5173
 
     - **`MONGODB_URI`**: Your MongoDB connection string. Ensure the database name in the URI is `cluster0` as used in the models. (atau minta gweh aja buat urlnya)
     - **`JWT_SECRET`**: A secret key used for signing JWT tokens. Make it long and complex(gk ush kalau local mah).
@@ -87,7 +93,7 @@ The frontend is a Vue.js application. The project root contains the `package.jso
 
     npm install
 
-    # or
+    or
 
     yarn install
 
@@ -95,7 +101,7 @@ The frontend is a Vue.js application. The project root contains the `package.jso
 
     npm run dev
 
-    # or
+    or
 
     yarn dev
 
@@ -106,3 +112,7 @@ The frontend is a Vue.js application. The project root contains the `package.jso
 Once both the backend and frontend servers are running, open your web browser and navigate to:
 
 http://localhost:5173
+
+### Note
+
+a bit laggy during messages and loading there, wait a bit before the contacts and its messages load.
