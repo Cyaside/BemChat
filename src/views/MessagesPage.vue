@@ -272,7 +272,6 @@ const getTimeClasses = (message) => [
                                 </div>
                                 <div>
                                     <h3 class="font-semibold">{{ selectedUser.username }}</h3>
-                                    <p class="text-sm opacity-90">Online</p>
                                 </div>
                             </div>
                         </header>
